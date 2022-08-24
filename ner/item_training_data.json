@@ -1,0 +1,457 @@
+[
+    {
+        "id" : "1",
+        "name": "alchemist's fire",
+        "ents" : [{"target": "alchemist's fire" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "2",
+        "name": "antitoxin",
+        "ents" : [{"target": "antitoxin" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "3",
+        "name": "backpack",
+        "ents" : [{"target": "backpack" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "4",
+        "name": "ball bearings",
+        "ents" : [{"target": "ball bearings" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "5",
+        "name": "barrel",
+        "ents" : [{"target": "barrel" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "6",
+        "name": "basket",
+        "ents" : [{"target": "basket" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "7",
+        "name": "bedroll",
+        "ents" : [{"target": "bedroll" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "8",
+        "name": "bell",
+        "ents" : [{"target": "bell" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "9",
+        "name": "blanket",
+        "ents" : [{"target": "blanket" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "10",
+        "name": "block and tackle",
+        "ents" : [{"target": "block and tackle" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "11",
+        "name": "book",
+        "ents" : [{"target": "book" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "12",
+        "name": "glass bottle",
+        "ents" : [{"target": "glass bottle" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "13",
+        "name": "bucket",
+        "ents" : [{"target": "bucket" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "14",
+        "name": "caltrop",
+        "ents" : [{"target": "caltrop" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "15",
+        "name": "candle",
+        "ents" : [{"target": "candle" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "16",
+        "name": "chain",
+        "ents" : [{"target": "chain" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "17",
+        "name": "chalk",
+        "ents" : [{"target": "chalk" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "18",
+        "name": "chest",
+        "ents" : [{"target": "chest" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "19",
+        "name": "crowbar",
+        "ents" : [{"target": "crowbar" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "20",
+        "name": "fishing tackle",
+        "ents" : [{"target": "fishing tackle" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "21",
+        "name": "flask",
+        "ents" : [{"target": "flask" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "22",
+        "name": "tankard",
+        "ents" : [{"target": "tankard" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "23",
+        "name": "grappling hook",
+        "ents" : [{"target": "grappling hook" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "24",
+        "name": "hammer",
+        "ents" : [{"target": "hammer" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "25",
+        "name": "sledge hammer",
+        "ents" : [{"target": "sledge hammer" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "26",
+        "name": "hourglass",
+        "ents" : [{"target": "hourglass" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "27",
+        "name": "hunting trap",
+        "ents" : [{"target": "hunting trap" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "28",
+        "name": "ink",
+        "ents" : [{"target": "ink" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "29",
+        "name": "jug",
+        "ents" : [{"target": "jug" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "30",
+        "name": "pitcher",
+        "ents" : [{"target": "pitcher" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "31",
+        "name": "ladder",
+        "ents" : [{"target": "ladder" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "32",
+        "name": "lamp",
+        "ents" : [{"target": "lamp" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "33",
+        "name": "bullseye lantern",
+        "ents" : [{"target": "mbullseye lantern" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "34",
+        "name": "hooded lantern",
+        "ents" : [{"target": "hooded lantern" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "35",
+        "name": "lock",
+        "ents" : [{"target": "lock" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "36",
+        "name": "magnifying glass",
+        "ents" : [{"target": "magnifying glass" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "37",
+        "name": "manacles",
+        "ents" : [{"target": "manacles" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "38",
+        "name": "mess kit",
+        "ents" : [{"target": "mess kit" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "39",
+        "name": "steel mirror",
+        "ents" : [{"target": "steel mirror" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "40",
+        "name": "mirror",
+        "ents" : [{"target": "mirror" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "41",
+        "name": "flask of oil",
+        "ents" : [{"target": "flask of oil" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "42",
+        "name": "oil",
+        "ents" : [{"target": "oil" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "43",
+        "name": "paper",
+        "ents" : [{"target": "paper" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "44",
+        "name": "parchment",
+        "ents" : [{"target": "parchment" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "45",
+        "name": "perfume",
+        "ents" : [{"target": "perfume" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "46",
+        "name": "miner's pick",
+        "ents" : [{"target": "miner's pick" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "47",
+        "name": "piton",
+        "ents" : [{"target": "piton" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "48",
+        "name": "iron pot",
+        "ents" : [{"target": "iron pot" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "49",
+        "name": "pouch",
+        "ents" : [{"target": "pouch" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "50",
+        "name": "quiver",
+        "ents" : [{"target": "quiver" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "51",
+        "name": "portable ram",
+        "ents" : [{"target": "portable ram" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "52",
+        "name": "sack",
+        "ents" : [{"target": "sack" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "53",
+        "name": "merchant's scale",
+        "ents" : [{"target": "merchant's scale" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "54",
+        "name": "sealing wax",
+        "ents" : [{"target": "sealing wax" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "55",
+        "name": "shovel",
+        "ents" : [{"target": "shovel" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "56",
+        "name": "signal whistle",
+        "ents" : [{"target": "signal whistle" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "57",
+        "name": "signet ring",
+        "ents" : [{"target": "signet ring" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "58",
+        "name": "soap",
+        "ents" : [{"target": "soap" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "59",
+        "name": "spellbook",
+        "ents" : [{"target": "spellbook" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "60",
+        "name": "iron spikes",
+        "ents" : [{"target": "iron spikes" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "61",
+        "name": "spyglass",
+        "ents" : [{"target": "spyglass" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "62",
+        "name": "tent",
+        "ents" : [{"target": "tent" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "63",
+        "name": "torch",
+        "ents" : [{"target": "torch" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "64",
+        "name": "waterskin",
+        "ents" : [{"target": "waterskin" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "65",
+        "name": "whetstone",
+        "ents" : [{"target": "whetstone" , "ent_type":"ITEM"}],
+        "value": "",
+        "description":""
+    }
+]

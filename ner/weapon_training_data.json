@@ -1,0 +1,261 @@
+[
+    {
+        "id" : "66",
+        "name": "club",
+        "ents" : [{"target": "club" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "67",
+        "name": "dagger",
+        "ents" : [{"target": "dagger" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "68",
+        "name": "greatclub",
+        "ents" : [{"target": "greatclub" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "69",
+        "name": "handaxe",
+        "ents" : [{"target": "handaxe" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "70",
+        "name": "javelin",
+        "ents" : [{"target": "javelin" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "71",
+        "name": "light hammer",
+        "ents" : [{"target": "light hammer" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "72",
+        "name": "mace",
+        "ents" : [{"target": "mace" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "73",
+        "name": "quarterstaff",
+        "ents" : [{"target": "quarterstaff" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "74",
+        "name": "sickle",
+        "ents" : [{"target": "sickle" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "75",
+        "name": "spear",
+        "ents" : [{"target": "spear" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "76",
+        "name": "light crossbow",
+        "ents" : [{"target": "light crossbow" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "77",
+        "name": "dart",
+        "ents" : [{"target": "dart" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "78",
+        "name": "shortbow",
+        "ents" : [{"target": "shortbow" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "79",
+        "name": "sling",
+        "ents" : [{"target": "sling" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "80",
+        "name": "battleaxe",
+        "ents" : [{"target": "battleaxe" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "81",
+        "name": "flail",
+        "ents" : [{"target": "flail" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "82",
+        "name": "glaive",
+        "ents" : [{"target": "glaive" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "83",
+        "name": "greataxe",
+        "ents" : [{"target": "greataxe" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "84",
+        "name": "greatsword",
+        "ents" : [{"target": "greatsword" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "85",
+        "name": "halberd",
+        "ents" : [{"target": "halberd" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "86",
+        "name": "lance",
+        "ents" : [{"target": "lance" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "87",
+        "name": "longsword",
+        "ents" : [{"target": "longsword" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "88",
+        "name": "maul",
+        "ents" : [{"target": "maul" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "89",
+        "name": "morningstar",
+        "ents" : [{"target": "morningstar" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "90",
+        "name": "pike",
+        "ents" : [{"target": "pike" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "91",
+        "name": "rapier",
+        "ents" : [{"target": "rapier" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "92",
+        "name": "scimitar",
+        "ents" : [{"target": "scimitar" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "93",
+        "name": "shortsword",
+        "ents" : [{"target": "shortsword" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "94",
+        "name": "trident",
+        "ents" : [{"target": "trident" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "95",
+        "name": "war pick",
+        "ents" : [{"target": "war pick" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "96",
+        "name": "warhammer",
+        "ents" : [{"target": "warhammer" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "97",
+        "name": "whip",
+        "ents" : [{"target": "whip" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "98",
+        "name": "blowgun",
+        "ents" : [{"target": "blowgun" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "99",
+        "name": "hand crossbow",
+        "ents" : [{"target": "hand crossbow" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "100",
+        "name": "heavy crossbow",
+        "ents" : [{"target": "heavy crossbow" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "101",
+        "name": "longbow",
+        "ents" : [{"target": "longbow" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    },
+    {
+        "id" : "102",
+        "name": "net",
+        "ents" : [{"target": "net" , "ent_type":"WEAPON"}],
+        "value": "",
+        "description":""
+    }
+]

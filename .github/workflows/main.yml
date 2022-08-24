@@ -52,7 +52,7 @@ jobs:
       if: success() || failure()    # run this step even if previous step failed
       with:
         name: JEST Tests            # Name of the check run which will be created
-        path: ./src/ner/report.xml   # Path to test results
+        path: ./text_adventure_ai/ner/report.xml   # Path to test results
         reporter: java-junit        # Format of test results
 
     - name: Install build dependencies

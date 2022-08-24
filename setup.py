@@ -28,10 +28,8 @@ setup(
     # above.
     author_email="author@example.com",  # Optional
     keywords="sample, setuptools, development",  # Optional
-    package_dir={'':"src"},
-    packages=find_packages(where="src"),  # Required
-
-    python_requires=">=3.8, <4",
+    packages=find_packages(),
+    python_requires=">=3.7, <4",
     install_requires=["spacy", "rich", "python-dotenv"],  # Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"

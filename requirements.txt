@@ -1,8 +1,4 @@
-grpcio
-grpcio-tools
-events
+
 spacy
-grpcio-testing
-prometheus_client
 rich
 python-dotenv

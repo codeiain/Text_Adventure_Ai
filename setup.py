@@ -28,9 +28,11 @@ setup(
     # above.
     author_email="author@example.com",  # Optional
     keywords="sample, setuptools, development",  # Optional
-    packages=find_packages(where=""),  # Required
+    package_dir={'':"src"},
+    packages=find_packages(where="src"),  # Required
+
     python_requires=">=3.7, <4",
-    install_requires=["peppercorn"],  # Optional
+    install_requires=["spacy", "rich", "python-dotenv"],  # Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
     # syntax, for example:
@@ -53,7 +55,7 @@ setup(
     # http://docs.python.org/distutils/setupscript.html#installing-additional-files
     #
     # In this case, 'data_file' will be installed into '<sys.prefix>/my_data'
-    data_files=[("my_data", ["data/data_file"])],  # Optional
+    # data_files=[("my_data", ["data/data_file"])],  # Optional
 
     project_urls={  # Optional
         "Bug Reports": "https://github.com/pypa/sampleproject/issues",

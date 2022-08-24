@@ -44,7 +44,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test AIS with pytest
       run: |
-        cd ./ner
+        cd ./src/ner
         pytest *_test*.py --junitxml=report.xml -s
 
     - name: Test AI's Report
@@ -52,7 +52,7 @@ jobs:
       if: success() || failure()    # run this step even if previous step failed
       with:
         name: JEST Tests            # Name of the check run which will be created
-        path: ./ner/report.xml   # Path to test results
+        path: ./src/ner/report.xml   # Path to test results
         reporter: java-junit        # Format of test results
 
     - name: Install build dependencies

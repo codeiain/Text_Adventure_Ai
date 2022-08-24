@@ -3,7 +3,7 @@ import random
 import spacy
 from spacy.training.example import Example
 
-from .training_data_loader import TrainingDataLoader
+from training_data_loader import TrainingDataLoader
 from pathlib import Path
 
 import logging
@@ -27,6 +27,9 @@ class NerAI:
                 self.ner.add_label(ent[2])
 
     def train(self, num_itn):
+        self.load_training_data("./training_data/item_training_data.json")
+        self.load_training_data("./training_data/weapon_training_data.json")
+        self.load_training_data("./training_data/monster_training_data.json")
         print("Starting Training")
         optimizer = self.nlp.create_optimizer()
         other_pipes = [pipe for pipe in self.nlp.pipe_names if pipe != "ner"]
@@ -72,6 +75,5 @@ if __name__ == "__main__":
     )
 
     ai = NerAI(log)
-    ai.load_training_data("item_training_data.json")
     ai.create_ents()
     ai.train(2)

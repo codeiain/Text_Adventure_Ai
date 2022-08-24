@@ -1,5 +1,5 @@
 import json
-
+import pkg_resources
 
 class ents:
     def __init__(self, target, type_ent):
@@ -12,7 +12,8 @@ class TrainingDataLoader:
         pass
 
     def load_json(self, filepath):
-        with open(filepath, "r", encoding="utf-8") as file:
+        stream = pkg_resources.resource_stream(__name__, filepath)
+        with open(stream, "r", encoding="utf-8") as file:
             jsonFile = json.load(file)
             return self.covert(jsonFile)
 

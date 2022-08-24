@@ -2,3 +2,4 @@
 spacy
 rich
 python-dotenv
+pkg_resources

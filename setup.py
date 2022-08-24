@@ -18,7 +18,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 # Fields marked as "Optional" may be commented out.
 
 setup(
-    name="textadventureai",  # Required
+    name="text_adventure_ai",  # Required
     version="0.0.1",  # Required
     description="Ais for Text Adventures",  # Optional
     # This should be your name or the name of the organization which owns the
@@ -31,7 +31,7 @@ setup(
     package_dir={'':"src"},
     packages=find_packages(where="src"),  # Required
 
-    python_requires=">=3.7, <4",
+    python_requires=">=3.8, <4",
     install_requires=["spacy", "rich", "python-dotenv"],  # Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"

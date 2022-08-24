@@ -22,7 +22,7 @@ else:
     ai.load_training_data("./weapon_training_data.json")
     ai.load_training_data("./monster_training_data.json")
     ai.create_ents()
-    ai.train(120)
+    ai.train(10)
     ai.save_model("ner", "models")
 
 

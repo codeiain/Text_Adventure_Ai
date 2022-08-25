@@ -3,7 +3,7 @@ import random
 import spacy
 from spacy.training.example import Example
 
-from training_data_loader import TrainingDataLoader
+from .training_data_loader import TrainingDataLoader
 from pathlib import Path
 
 import logging

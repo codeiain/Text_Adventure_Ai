@@ -3,18 +3,22 @@ import random
 import spacy
 from spacy.training.example import Example
 
-from .training_data_loader import TrainingDataLoader
+from training_data_loader import TrainingDataLoader
 from pathlib import Path
 
 import logging
 from rich.logging import RichHandler
+from feature_flags import Flags
+from os import path
 
+basedir = path.abspath(path.dirname(__file__))
+flags = Flags(path.join(basedir, "toggles.yaml"))
 
 class NerAI:
     def __init__(self, log):
         self.log = log
         self.TRAINING_DATA = []
-        self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.load("en_core_web_lg")
         self.ner = self.nlp.get_pipe("ner")
 
     def load_training_data(self, file):
@@ -30,6 +34,8 @@ class NerAI:
         self.load_training_data("./training_data/item_training_data.json")
         self.load_training_data("./training_data/weapon_training_data.json")
         self.load_training_data("./training_data/monster_training_data.json")
+        self.load_training_data("./training_data/direction_training_data.json")
+        self.create_ents()
         print("Starting Training")
         optimizer = self.nlp.create_optimizer()
         other_pipes = [pipe for pipe in self.nlp.pipe_names if pipe != "ner"]

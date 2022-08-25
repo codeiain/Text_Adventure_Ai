@@ -226,7 +226,7 @@
     {
         "id" : "33",
         "name": "bullseye lantern",
-        "ents" : [{"target": "mbullseye lantern" , "ent_type":"ITEM"}],
+        "ents" : [{"target": "bullseye lantern" , "ent_type":"ITEM"}],
         "value": "",
         "description":""
     },

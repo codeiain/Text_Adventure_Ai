@@ -1,0 +1,8 @@
+---
+use_en_core_web_sm:
+    value: false
+    name: Character Cache
+    description: use Redis Cache for characters
+    creation_date: 2022-08-24
+    max_lifetime: 14
+

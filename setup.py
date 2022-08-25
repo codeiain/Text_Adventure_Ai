@@ -30,7 +30,7 @@ setup(
     keywords="sample, setuptools, development",  # Optional
     packages=find_packages(),
     python_requires=">=3.7, <4",
-    install_requires=["spacy", "rich", "python-dotenv", "git+https://github.com/codeiain/FeatureFlags.git"],  # Optional
+    install_requires=["spacy", "rich", "python-dotenv"],  # Optional
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
     # syntax, for example:

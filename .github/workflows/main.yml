@@ -45,7 +45,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test AIS with pytest
       run: |
-        cd ./src/ner
+        cd ./text_adventure_ai/ner
         pytest *_test*.py --junitxml=report.xml -s
 
     - name: Test AI's Report

@@ -66,6 +66,7 @@ class NerAI:
                 return_int = return_int + 1
                 end_time = time.time()
                 self.log.info("train time: {}".format(end_time-start_time))
+                self.prometheus_gauge.labels('itn_time').set(end_time-start_time)
                 if self.prometheus_summary != None:
                     self.prometheus_summary.observe(end_time-start_time)
         self.log.info("Final loss: " + str(losses['ner']))

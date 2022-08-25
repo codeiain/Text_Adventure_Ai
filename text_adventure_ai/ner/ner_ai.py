@@ -3,7 +3,7 @@ import random
 import spacy
 from spacy.training.example import Example
 
-from .training_data_loader import TrainingDataLoader
+from training_data_loader import TrainingDataLoader
 from pathlib import Path
 
 import logging
@@ -14,7 +14,8 @@ class NerAI:
     def __init__(self, log):
         self.log = log
         self.TRAINING_DATA = []
-        self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.blank("temp")
+        # self.nlp = spacy.load("en_core_web_sm")
         self.ner = self.nlp.get_pipe("ner")
 
     def load_training_data(self, file):

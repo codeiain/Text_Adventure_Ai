@@ -12,10 +12,9 @@ class TrainingDataLoader:
         pass
 
     def load_json(self, filepath):
-        stream = pkg_resources.resource_stream(__name__, filepath)
-        with open(stream, "r", encoding="utf-8") as file:
-            jsonFile = json.load(file)
-            return self.covert(jsonFile)
+        stream = pkg_resources.resource_stream(__name__, filepath).read().decode()
+        jsonFile = json.loads(stream)
+        return self.covert(jsonFile)
 
     def covert(self, list):
         tr = []
@@ -24,6 +23,7 @@ class TrainingDataLoader:
             for en in item["ents"]:
                 entites.append(ents(en["target"], en["ent_type"]))
             tr.append(self.build_spacy_ner(item["name"], entites))
+
         return tr
 
     def build_spacy_ner(self, text, entities):
@@ -37,4 +37,4 @@ class TrainingDataLoader:
 
 if __name__ == "__main__":
     training = TrainingDataLoader()
-    TRAINING_DATA = training.load_json("item_training_data.json")
+    TRAINING_DATA = training.load_json("training_data\item_training_data.json")

@@ -7,6 +7,8 @@ from .training_data_loader import TrainingDataLoader
 from pathlib import Path
 
 import logging
+
+import time
 from rich.logging import RichHandler
 
 from os import path
@@ -15,13 +17,14 @@ basedir = path.abspath(path.dirname(__file__))
 
 
 class NerAI:
-    def __init__(self, log, prometheus_gauge=None):
+    def __init__(self, log, prometheus_gauge=None, prometheus_summary=None):
         self.log = log
         self.log.info("New AI")
         self.TRAINING_DATA = []
         self.nlp = spacy.load("en_core_web_lg")
         self.ner = self.nlp.get_pipe("ner")
         self.prometheus_gauge = prometheus_gauge
+        self.prometheus_summary = prometheus_summary
 
     def load_training_data(self, file):
         loader = TrainingDataLoader()
@@ -44,6 +47,7 @@ class NerAI:
         other_pipes = [pipe for pipe in self.nlp.pipe_names if pipe != "ner"]
         with self.nlp.disable_pipes(*other_pipes):
             for itn in range(iteration, (iteration + num_itn)):
+                start_time = time.time()
                 self.log.info("Starting " + str(itn))
                 random.shuffle(self.TRAINING_DATA)
                 losses = {}
@@ -60,7 +64,10 @@ class NerAI:
 
                 self.log.info("itn: " + str(itn) + " Losses:" + str(losses['ner']))
                 return_int = return_int + 1
-
+                end_time = time.time()
+                self.log.info("train time: {}".format(end_time-start_time))
+                if self.prometheus_summary != None:
+                    self.prometheus_summary.observe(end_time-start_time)
         self.log.info("Final loss: " + str(losses['ner']))
         if self.prometheus_gauge != None:
             self.prometheus_gauge.labels('final_loss').set(losses['ner'])

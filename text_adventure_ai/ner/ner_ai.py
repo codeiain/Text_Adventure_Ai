@@ -62,6 +62,8 @@ class NerAI:
                 return_int = return_int + 1
 
         self.log.info("Final loss: " + str(losses['ner']))
+        if self.prometheus_gauge != None:
+            self.prometheus_gauge.labels('final_loss').set(losses['ner'])
         return return_int, losses['ner']
 
     def save_model(self, model_name, model_output_dir):

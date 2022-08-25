@@ -3,23 +3,25 @@ import random
 import spacy
 from spacy.training.example import Example
 
-from training_data_loader import TrainingDataLoader
+from .training_data_loader import TrainingDataLoader
 from pathlib import Path
 
 import logging
 from rich.logging import RichHandler
-from feature_flags import Flags
+
 from os import path
 
 basedir = path.abspath(path.dirname(__file__))
-flags = Flags(path.join(basedir, "toggles.yaml"))
+
 
 class NerAI:
-    def __init__(self, log):
+    def __init__(self, log, prometheus_gauge=None):
         self.log = log
+        self.log.info("New AI")
         self.TRAINING_DATA = []
         self.nlp = spacy.load("en_core_web_lg")
         self.ner = self.nlp.get_pipe("ner")
+        self.prometheus_gauge = prometheus_gauge
 
     def load_training_data(self, file):
         loader = TrainingDataLoader()
@@ -30,21 +32,21 @@ class NerAI:
             for ent in annotations.get("entities"):
                 self.ner.add_label(ent[2])
 
-    def train(self, num_itn):
+    def train(self, iteration, num_itn):
         self.load_training_data("./training_data/item_training_data.json")
         self.load_training_data("./training_data/weapon_training_data.json")
         self.load_training_data("./training_data/monster_training_data.json")
         self.load_training_data("./training_data/direction_training_data.json")
         self.create_ents()
-        print("Starting Training")
+        self.log.info("Starting Training")
         optimizer = self.nlp.create_optimizer()
+        return_int = iteration
         other_pipes = [pipe for pipe in self.nlp.pipe_names if pipe != "ner"]
-
         with self.nlp.disable_pipes(*other_pipes):
-            for itn in range(num_itn):
+            for itn in range(iteration, (iteration + num_itn)):
+                self.log.info("Starting " + str(itn))
                 random.shuffle(self.TRAINING_DATA)
                 losses = {}
-
                 for batch in spacy.util.minibatch(self.TRAINING_DATA, size=8):
                     for text, annotations in batch:
                         doc = self.nlp.make_doc(text)
@@ -52,11 +54,15 @@ class NerAI:
                         self.nlp.update(
                             [example], drop=0.35, sgd=optimizer, losses=losses
                         )
-                self.log.info("itn: " + str(itn) + " Losses:", losses)
-                print("itn: " + str(itn) + " Losses:", losses)
-        self.log.info("Final loss: ", losses)
-        print("Final loss: ", losses)
-        print("\n")
+                if self.prometheus_gauge != None:
+                    self.prometheus_gauge.labels('itn').set(itn)
+                    self.prometheus_gauge.labels('loss').set(losses['ner'])
+
+                self.log.info("itn: " + str(itn) + " Losses:" + str(losses['ner']))
+                return_int = return_int + 1
+
+        self.log.info("Final loss: " + str(losses['ner']))
+        return return_int, losses['ner']
 
     def save_model(self, model_name, model_output_dir):
         output_dir = Path(model_output_dir)

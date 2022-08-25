@@ -14,8 +14,7 @@ class NerAI:
     def __init__(self, log):
         self.log = log
         self.TRAINING_DATA = []
-        self.nlp = spacy.blank("temp")
-        # self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.load("en_core_web_sm")
         self.ner = self.nlp.get_pipe("ner")
 
     def load_training_data(self, file):

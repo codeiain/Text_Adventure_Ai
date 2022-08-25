@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "north",
+    "ents": [
+      {
+        "target": "north",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "name": "south",
+    "ents": [
+      {
+        "target": "south",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "name": "east",
+    "ents": [
+      {
+        "target": "east",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "name": "west",
+    "ents": [
+      {
+        "target": "west",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+    {
+    "id": "5",
+    "name": "up",
+    "ents": [
+      {
+        "target": "up",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+    {
+    "id": "6",
+    "name": "down",
+    "ents": [
+      {
+        "target": "down",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+    {
+    "id": "7",
+    "name": "left",
+    "ents": [
+      {
+        "target": "left",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  },
+    {
+    "id": "8",
+    "name": "right",
+    "ents": [
+      {
+        "target": "right",
+        "ent_type": "DIRECTION"
+      }
+    ],
+    "value": "",
+    "description": ""
+  }
+]

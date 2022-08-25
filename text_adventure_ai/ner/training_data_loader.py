@@ -1,6 +1,7 @@
 import json
 import pkg_resources
 
+
 class ents:
     def __init__(self, target, type_ent):
         self.target = target

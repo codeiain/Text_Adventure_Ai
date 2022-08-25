@@ -19,7 +19,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="text_adventure_ai",  # Required
-    version="0.0.1",  # Required
+    version="0.0.2",  # Required
     description="Ais for Text Adventures",  # Optional
     # This should be your name or the name of the organization which owns the
     # project.

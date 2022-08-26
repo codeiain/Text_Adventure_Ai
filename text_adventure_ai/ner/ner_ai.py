@@ -59,20 +59,20 @@ class NerAI:
                             [example], drop=0.35, sgd=optimizer, losses=losses
                         )
                 if self.prometheus_gauge != None:
-                    self.prometheus_gauge.labels('itn').set(itn)
-                    self.prometheus_gauge.labels('loss').set(losses['ner'])
+                    self.prometheus_gauge.labels("itn").set(itn)
+                    self.prometheus_gauge.labels("loss").set(losses["ner"])
 
-                self.log.info("itn: " + str(itn) + " Losses:" + str(losses['ner']))
+                self.log.info("itn: " + str(itn) + " Losses:" + str(losses["ner"]))
                 return_int = return_int + 1
                 end_time = time.time()
-                self.log.info("train time: {}".format(end_time-start_time))
-                self.prometheus_gauge.labels('itn_time').set(end_time-start_time)
+                self.log.info("train time: {}".format(end_time - start_time))
+                self.prometheus_gauge.labels("itn_time").set(end_time - start_time)
                 if self.prometheus_summary != None:
-                    self.prometheus_summary.observe(end_time-start_time)
-        self.log.info("Final loss: " + str(losses['ner']))
+                    self.prometheus_summary.observe(end_time - start_time)
+        self.log.info("Final loss: " + str(losses["ner"]))
         if self.prometheus_gauge != None:
-            self.prometheus_gauge.labels('final_loss').set(losses['ner'])
-        return return_int, losses['ner']
+            self.prometheus_gauge.labels("final_loss").set(losses["ner"])
+        return return_int, losses["ner"]
 
     def save_model(self, model_name, model_output_dir):
         output_dir = Path(model_output_dir)

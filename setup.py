@@ -55,7 +55,7 @@ setup(
     # In this case, 'data_file' will be installed into '<sys.prefix>/my_data'
     # data_files=[("my_data", ["data/data_file"])],  # Optional
     include_package_data=True,
-    package_data={'': ['ner/training_data/*.json']},
+    package_data={"": ["ner/training_data/*.json"]},
     project_urls={  # Optional
         "Bug Reports": "https://github.com/pypa/sampleproject/issues",
         "Funding": "https://donate.pypi.org",
